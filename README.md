@@ -1,4 +1,5 @@
 🎬 Netflix Hybrid Recommendation System
+
 📘 Overview
 
 This project presents a hybrid recommendation system for Netflix that combines content-based filtering and collaborative filtering to deliver accurate, personalized, and diverse recommendations. The system integrates TF-IDF vectorization and cosine similarity to identify content similarity based on multiple features such as title, cast, director, genre, and description.
@@ -7,35 +8,48 @@ The hybrid model effectively addresses key challenges in recommendation systems 
 
 🚀 Key Features
 
-Hybrid Recommendation Approach: Combines the strengths of collaborative and content-based filtering.
+1. Hybrid Recommendation Approach: Combines the strengths of collaborative and content-based filtering.
 
-TF-IDF and Cosine Similarity: Used for computing similarity scores between items.
+2. TF-IDF and Cosine Similarity: Used for computing similarity scores between items.
 
-Multi-Feature Integration: Utilizes metadata like cast, director, genre, and description for better accuracy.
+3. Multi-Feature Integration: Utilizes metadata like cast, director, genre, and description for better accuracy.
 
-Interactive Web Interface: Developed using Streamlit for real-time recommendations.
+4. Interactive Web Interface: Developed using Streamlit for real-time recommendations.
 
-Data-Driven Insights: Includes exploratory data analysis (EDA) on Netflix content trends.
+5. Data-Driven Insights: Includes exploratory data analysis (EDA) on Netflix content trends.
 
-Cold Start Handling: Mitigates issues for new users or new content through hybrid strategy.
+6. Cold Start Handling: Mitigates issues for new users or new content through hybrid strategy.
 
 🧠 Project Structure
+
 📂 Netflix-Recommendation-System
+
 │
 ├── 📄 netflix_dataset.csv                 # Main Netflix dataset
+
 ├── 📄 IMDb movies.csv                     # IMDb metadata file
+
 ├── 📄 IMDb ratings.csv                    # IMDb ratings data
+
 ├── 📄 netflix_recommendation_model.pkl    # Saved model (pickle file)
+
 │
 ├── 📜 netflix_recommendation.ipynb        # Data preprocessing, EDA, model creation
+
 ├── 📜 app.py                              # Streamlit web application script
+
 │
 ├── 🖼️ netflix_image.jpg                   # Image displayed in the web app
+
 ├── 📘 README.md                           # Project documentation
+
 └── 📄 requirements.txt                    # List of libraries/dependencies
 
+
 🧩 Technologies and Libraries Used
+
 Category	Library / Tool	Purpose
+
 Data Handling	pandas, numpy	Data preprocessing and manipulation
 Visualization	matplotlib, seaborn	Data exploration and visual analysis
 NLP / ML	scikit-learn	TF-IDF, CountVectorizer, cosine similarity
@@ -43,20 +57,26 @@ Web App	streamlit	Building the interactive UI
 Image Processing	PIL	Displaying images in the Streamlit app
 Model Storage	pickle	Saving and loading trained model
 Miscellaneous	warnings	Suppressing unnecessary alerts
+
 ⚙️ Installation and Setup
+
 1️⃣ Clone the Repository
+
 git clone https://github.com/yourusername/netflix-hybrid-recommendation.git
 cd netflix-hybrid-recommendation
 
 2️⃣ Create and Activate a Virtual Environment (Optional but Recommended)
+
 python -m venv venv
 source venv/bin/activate   # for macOS/Linux
 venv\Scripts\activate      # for Windows
 
 3️⃣ Install Dependencies
+
 pip install -r requirements.txt
 
 ▶️ Running the Project
+
 Step 1: Train/Prepare the Model
 
 If you wish to re-run the model training:
